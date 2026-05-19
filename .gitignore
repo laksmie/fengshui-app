@@ -1,0 +1,25 @@
+# Expo auto-generated
+expo-env.d.ts
+
+# Dépendances
+node_modules/
+
+# Expo cache
+.expo/
+
+# Build Android/iOS (regénérés par prebuild)
+android/
+ios/
+
+# Fichiers de build
+*.apk
+*.aab
+*.keystore
+
+# Variables d'environnement
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
