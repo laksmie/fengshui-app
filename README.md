@@ -1,22 +1,48 @@
-# Welcome to your FengShui app ðŸ‘‹
 
-cat > README.md << 'EOF'
 # Laksmie Feng Shui
 
-Application mobile de Feng Shui développée avec React Native / Expo.
+Application de calcul Feng Shui pour Android
 
-## Fonctionnalités
 - Calcul du nombre Kua
 - Boussole Feng Shui interactive
-- Carrés Lo Shu (logement et temporels)
+- CarrÃ©s Lo Shu (logement et temporels)
 - Cours et articles
-## Bonus
-- Numérologie
+Bonus
+- NumÃ©rologie
 - Jyotish
 
+## PrÃ©requis
+
+- Node.js 20+
+- Java JDK 17+
+- Android SDK (API 35)
+- Expo CLI : `npm install -g expo-cli eas-cli`
+
 ## Installation
+
 ```bash
 npm install
+```
+
+## Lancer en dÃ©veloppement
+
+```bash
 npx expo start
 ```
-EOF
+
+## Compiler l'APK
+
+```bash
+npx expo prebuild --platform android --clean
+cd android && ./gradlew assembleRelease
+```
+
+Ou via EAS Build :
+
+```bash
+eas build -p android --profile preview
+```
+
+## Licence
+
+GNU GPL v3 â€” voir le fichier LICENSE
